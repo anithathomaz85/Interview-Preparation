@@ -1,0 +1,9 @@
+package com.example;
+
+@SpringBootApplication
+public class SpringBootInterceptorExampleApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootInterceptorExampleApplication.class, args);
+    }
+

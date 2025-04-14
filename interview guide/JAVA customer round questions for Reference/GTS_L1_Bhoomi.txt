@@ -1,0 +1,22 @@
+explain about the project in which areas u have worked on ?
+
+Given an input array 
+int [] arr={9,2,7,1,6,4,3,5};
+sum is =7
+sum=2,1,4 with three indesx combination to get the sum.
+
+create multiple thread ?
+
+difference between spring and springboot?
+
+what is dependency injection ?
+
+what is multi threading?
+
+what is thread pool?
+
+what are the advantages of thread pool?
+
+what is scheduler ?
+
+

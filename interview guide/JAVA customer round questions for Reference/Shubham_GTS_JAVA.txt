@@ -1,0 +1,14 @@
+what is circuit braker pattern?
+how to create custom circuit braker pattern if you don't have any framework?
+how to do indexing in database?
+what is functional interface ?
+how to implement functional interface?
+what is difference between map and flat map with example
+what controller advice ?
+find highest occurrence character in you name?
+
+
+
+
+
+ 

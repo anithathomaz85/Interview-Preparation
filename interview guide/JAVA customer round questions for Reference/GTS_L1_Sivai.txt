@@ -1,0 +1,19 @@
+1. Self introduction and explain briefly about latest project
+2. Runnable and callable interface differences 
+3. What is Singleton design pattern and it's  uses
+4. Autoboxing and unboxing
+5. Garbage collector
+6. Static keywords on class and methods level 
+7. Diff bw Exception and error
+8. How to handle null pointer exception
+9. What are the Collections used in your project and how did you use
+10. HashMap and HashSet differences 
+11. Strings and strings buffer related questions 
+12. Differences between heap and stack
+13. Springboot annotations and it's uses
+14. Dependency injection 
+15. Setter injection and constructor injection 
+16. Hibernate session factory
+17. Write a program to add two numbers from given list to get sum of 9 ex: 3+6=9; 8+1=9
+18. Shallow copy and deep copy
+19. Mvc design patterns

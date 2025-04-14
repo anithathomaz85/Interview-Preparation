@@ -1,0 +1,11 @@
+1. Find triplets from the given array equals to the given sum? What is the time complexity?
+2. How to make the solution of above logic more quicker and decrease time complexity?  
+3. What is JIT? How JIT is different from normal compiler?
+4. How can we break the Singleton class - write code?
+5. What is volatile?
+6. What is covariant?
+7. For given object, how can we sort the objects based on field, ex- itemCategory? Write logic for comparable & comparator?
+8. Which one to choose in which condition?
+9. What is synchronization?
+10. What happens if we use synchronized method in code?
+11. Can we execute any code before main method & how, show example?

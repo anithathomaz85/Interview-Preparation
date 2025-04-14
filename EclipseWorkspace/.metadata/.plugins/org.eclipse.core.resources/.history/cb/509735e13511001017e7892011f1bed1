@@ -1,0 +1,22 @@
+package gts;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import org.junit.jupiter.api.Test;
+
+public class B_FibonacciSeriesTest {
+	
+	@Test
+	public void testFibonacciSeries1() {
+		 ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+		 System.setOut(new PrintStream(outputStream));
+		 B_FibonacciSeries.main(new String[]{});
+		 System.setOut(System.out);
+		 String expectedOutput = "0 1 1 2 3 5\n";
+		 assertEquals(expectedOutput, outputStream.toString());
+	}
+
+}

@@ -1,0 +1,118 @@
+package gts;
+
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * Given an sorted array. find the pair for given sum. int nums[] = {1, 2, 3, 4,
+ * 5, 6}
+ */
+/**
+ * Time Complexity:
+ 		O(n) - Since the array is sorted	
+ * */
+public class Q100_Q4_Q15_Q21_Q54_Q55_Pair {
+	
+	public static void main(String[] args) {
+		int[] nums = { 1, 2, 3, 4, 5, 6 };
+		int target = 9;
+
+		findPairUsingTwoPointer(nums, target);
+		System.out.println();
+		findPairUsingComplement(nums, target);
+		System.out.println();
+		findPairUsingBinarySearch(nums, target);
+		
+	}
+
+	/**
+	 * Two-pointer approach
+	 * 		Best for sorted arrays — fastest and least space
+	 *Time Complexity: O(n)
+					→ Since each pointer moves at most n steps, total number of operations = n.		  
+	*/
+	public static void findAllPairsUsingTwoPointer(int[] nums, int target) {
+	    int left = 0;
+	    int right = nums.length - 1;
+	    boolean found = false; // Flag to check if any pair is found
+
+	    while (left < right) {
+	        int sum = nums[left] + nums[right];
+
+	        if (sum == target) {
+	            System.out.println("Pair found: (" + nums[left] + ", " + nums[right] + ")");
+	            found = true;
+	            left++;
+	            right--;
+	        } else if (sum < target) {
+	            left++;
+	        } else {
+	            right--;
+	        }
+	    }
+
+	    if (!found) {
+	        System.out.println("No pairs found for sum " + target);
+	    }
+	}
+
+	
+	/**
+	 * HashSet complement approach
+	 * 		Best for unsorted arrays — no need to sort
+	 * Time Complexity: O(n)
+				→ One pass through the array + constant time contains and add operations on a HashSet.
+	   Space Complexity: O(n)
+				→ In the worst case, all elements might be added to the seen set.
+	 */	
+	private static void findPairUsingComplement(int[] nums, int target) {
+		Set<Integer> seen = new HashSet<>();
+
+		for (int num : nums) {
+			int complement = target - num;
+
+			if (seen.contains(complement)) {
+				System.out.println("Pair found: (" + num + ", " + complement + ")");
+				return;
+			}
+
+			seen.add(num);
+		}
+
+		System.out.println("No pair found for sum " + target);
+	}
+	
+
+
+
+	/**
+	 * Binary Search 
+	 * 	Good for sorted arrays if you specifically want to practice binary search
+	 * Time Complexity: 
+	 * 			Outer loop: O(n) 
+	 * 			Inner binary search: O(log n)
+	 * 			Total: O(n log n)
+	 */
+	
+	public static void findPairUsingBinarySearch(int[] nums, int target) {
+		for (int i = 0; i < nums.length - 1; i++) {
+			int complement = target - nums[i];
+			int low = i + 1;
+			int high = nums.length - 1;
+
+			while (low <= high) {
+				int mid = low + (high - low) / 2;
+
+				if (nums[mid] == complement) {
+					System.out.println("Pair found: (" + nums[i] + ", " + nums[mid] + ")");
+					return;
+				} else if (nums[mid] < complement) {
+					low = mid + 1;
+				} else {
+					high = mid - 1;
+				}
+			}
+		}
+		System.out.println("No pair found for sum " + target);
+	}		
+}

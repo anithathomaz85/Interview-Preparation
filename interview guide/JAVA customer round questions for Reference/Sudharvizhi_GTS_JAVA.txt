@@ -1,0 +1,15 @@
+The below questions asked IN L1 round: L1-Round 
+1.(3+4) - valid
+(a+g)+d) - invalid
+{d+(a+e)+[x+y]} - valid, write a program to check given String have valid parathis are not?.
+2. Difference between Microservice and monolithic Architecture?
+3. When will you use vertical / horizontal scaling explain?
+4.Explain Spring Boot Architecture?
+5.What @SprinBootApplication doing ?
+6. What is @Bean what happened if we are not using @Bean annotation?
+7. Difference between Postgress and MongoDB?
+6.Do you know Scala or CosmassDB?
+7. Write a program from the given array int a={9,3,1,7,8,2} to List out the even numbers first and then you can print the even numbers sum.
+8.Autoscaling
+9.what is singleton design pattern explain how will you achieve?
+10. what is adaptor design pattern

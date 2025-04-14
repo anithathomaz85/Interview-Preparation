@@ -1,0 +1,9 @@
+Explain Polymorphism and its types?
+Explain SOLID princes with examples
+What is Dependency Injection and how it happens in Springboot
+Program 1- Given a list of integer 
+	- pick out even number - convert it into square - print it on screen  using Stream API
+Program 2- Given a list of String 
+	-find the frequency of each word and print the result map using Stream
+Program 3- Given  a list of integer find the max value.
+Program 4- Write a code to reverse a linked list . Explain working by creating dummy nodes on Online Java compiler 

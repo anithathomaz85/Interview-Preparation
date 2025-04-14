@@ -1,0 +1,9 @@
+Please find the below customer round question.
+
+1) Kafka - Flow
+2) Reverse Linked List
+3) Rest API 
+4) https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/description/
+5) Exception Handling
+6) Finally
+7) Exception vs Error

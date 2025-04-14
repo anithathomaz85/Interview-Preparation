@@ -1,0 +1,15 @@
+1. Introduction
+2. Working of HashMap
+3. why size of bucket is 16 always can we customize it?
+4. Can we create customize HashMap, explanation.
+5. worst and best case of putting and fetching operation in HashMap.
+6. How can we optimized HashMap operation in worst case.
+7. Normalization
+8. Disadvantage of normalization.
+9. Hibernate why you use hibernate.
+10. Reverse alphanumeric and special character string ("ajsggs^%@$#@71552") without using any built in method (valueOf(), chartAt(), toCharArray())
+11. If there is hash collision on every put operation then what will be the time complexity and how we can optimized.
+12. Why organizations are still using JDBC over ORM tools.
+13. If there is data in HashMap(like A=1,B=2,C=3,D=4) and if we are trying to insert/put same keys in different order having same hashcode
+ but equality is false then what will happen and in this case what will be the time complexity.
+(in question 13 what will be the time complexity if we are trying to fetch 'A')

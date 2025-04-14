@@ -1,0 +1,156 @@
+
+
+* Tell me about your self -- Exp, Project & High level usage, domain, technical stack,  Model(Agile Methodoligy)
+
+   Roles & Resonsibilites -- Estimation, design, code, unit-testing, defect fixing, production deployment & issues fixed, value added tools
+   
+   Tecnical design - MVC Architecure, Design Patterns, Controller + Service + Respository etc..
+   
+* Custom Bean - Employee ( Id, Name, Age, Gender)  
+		1) Find Unique list - equals and hashcode , streams with distinct()
+		
+		2) Find List of employees age between 25 and 35 (Use filter ) 
+   
+* Program to write RestController, Service and Repository with few methods (finder)
+
+* Spring Interceptors - (In Spring MVC) --> 
+			( implement logging, security, Authentication etc..)
+			HandlerInterceptor - preHandle, postHandle, afterCompletion
+	
+* Filter ( Servlet API ) init(), doFilter(), destroy()
+
+* AOP - @Aspect @Component - @Before, @AfterReturning, @AfterThrowing, @After
+
+* @Qualifier - Define Beans with the same Type, to specify which bean to inject
+
+* Bean creation Types - 
+		1) Component Scanning with Annotations - @Component, @Service @Repository @Controller 
+		2) Explict Bean Declaration - @Bean
+		3) Conditional Bean Creations - @ConditionalOnClass, @ConditionalOnProperty, @ConditionalOnBean
+		4) Factory Beans
+		5) XML Configuration
+		
+* Spring Boot Testing -- Junit5 
+	@SpringBootTest @ExtendWith(MockitoExtension.class), @Mock @InjectMocks 
+        @Test @Assert methods @BeforeAll @BeachEach @AfterAll @AfterEach  
+	and Tools Used to it		
+				
+* @ComponentScan(basePackages = {"", ""}) purpose and when to use
+
+*  difference b/w toList and collect(Collectors.toList());
+
+* @RequestHeader HttpHeaders headers --> how display all the headers
+
+					@RestController
+				public class MyController {
+				 
+					@GetMapping("/printHeaders")
+					public String printHeaders(HttpServletRequest request) {
+						StringBuilder headerInfo = new StringBuilder();
+						headerInfo.append("Request Headers:\n");
+				 
+						// Iterate through all header names and retrieve their values
+						Enumeration<String> headerNames = request.getHeaderNames();
+						while (headerNames.hasMoreElements()) {
+							String headerName = headerNames.nextElement();
+							String headerValue = request.getHeader(headerName);
+							headerInfo.append(headerName).append(": ").append(headerValue).append("\n");
+						}
+				 
+						System.out.println(headerInfo.toString()); // Print headers to console
+						return headerInfo.toString(); // Return headers as response
+					}
+				}
+
+* @RequestBody how and when to use @Valid (Validations) annotations
+
+* @Configuration - @Bean with same type then use @Qualifier
+
+				@Configuration
+			public class AppConfig {
+			 
+				@Bean
+				public FooService fooService1() {
+					return new FooService("Service 1");
+				}
+			 
+				@Bean
+				public FooService fooService2() {
+					return new FooService("Service 2");
+				}
+			 
+				@Bean
+				public MyComponent myComponent(@Qualifier("fooService1") FooService fooService) {
+					return new MyComponent(fooService);
+				}
+			}
+
+
+
+   
+  *  @SpringBootApplication, @ComponentScan and Bean life cycle and internal flow
+  
+  * @Order
+  
+  * @Transactional 
+  
+				@Service
+				public class TransactionOrderService {
+				 
+					@Autowired
+					private JdbcTemplate jdbcTemplate;
+				 
+					@Autowired
+					private TransactionTemplate transactionTemplate;
+				 
+					public void insertAndUpdate() {
+						transactionTemplate.execute(status -> {
+							try {
+								// Insert a new user
+								jdbcTemplate.update("INSERT INTO users (first_name, last_name) VALUES (?, ?)", "John", "Doe");
+				 
+								// Update the inserted user
+								jdbcTemplate.update("UPDATE users SET last_name = ? WHERE first_name = ?", "Smith", "John");
+				 
+								return null; // Commit transaction
+							} catch (Exception e) {
+								status.setRollbackOnly(); // Rollback transaction if an exception occurs
+								return null;
+							}
+						});
+					}
+				}
+				
+		
+		
+==============
+
+
+Java 8 Features - Lamda Expressions, 
+				Functional Interfaces @FunctionalInterface, 
+				Streams API, 
+				Default Methods, 
+				Method References, 
+				Optional Class, 
+				Date and Time API
+				Parllel Array Sorting
+				
+
+Spring Boot Validations - Built in Validations and Custom Validations 
+
+Spring Boot Exception Handling
+
+Spring Boot vs Spring MVC
+
+Autowiring Types  - Construction, Setter Injection, Field Injection etc..
+
+How many ways read properties/ yml files - @Value , @Autowired, @ConfigurationProperties
+
+Find 2nd higest salary employee in SQL and using java 8 
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+.Tell me about yourself and the latest project architecture.
+.In microservices how to monitor a failure of a particular microservice.
+.Coding
+
+A peak element is an element that is strictly greater than its neighbors.
+
+Given a 0-indexed integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks.
+
+Answer:
+List<Integer> ls= Arrays.asList(1,2,3,1);
+List<Integer> result= ls.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
+System.out.println(result.get(0));
+
+added question in the same scenario for the given input {1, 3, -1, -3, 5, 3, 6, 7} consider 3 nos and find the highest (peak)
+like for 1, 3, -1 peakval is 3
+3, -1, -3 peakval is 3
+-1, -3, 5 peakval is 5
+-3, 5, 3 peakval is 5
+5, 3, 6 peakval is 6
+3, 6, 7 peakval is 7
+
+
+
+Answer:
+
+public static void main(String[] args) {
+              int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
+              int k = 3;
+              List<Integer> result = peakval(nums, k);
+              System.out.println(result);
+          }
+
+          public static List<Integer> pealval(int[] nums, int k) {
+              if (nums == null || nums.length == 0) return new ArrayList<>();
+              return IntStream.rangeClosed(0, nums.length - k)
+                      .mapToObj(i -> Arrays.stream(nums, i, i + k).max().getAsInt())
+                      .collect(Collectors.toList());
+          }

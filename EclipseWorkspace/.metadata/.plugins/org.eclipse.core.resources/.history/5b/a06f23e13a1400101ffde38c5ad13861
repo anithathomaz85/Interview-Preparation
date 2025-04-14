@@ -1,0 +1,25 @@
+package gts;
+
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+/**
+ * Find a character whose occurrence is the most
+ * */
+public class Q48_MostFrequentCharacter {
+	public static void main(String[] args) {
+		
+		String inputStr = "this is a large string";
+		
+		inputStr.chars()
+				.mapToObj(c->(char)c)
+				.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+				.entrySet()
+				.stream()
+				.max(Map.Entry.comparingByValue())
+				.orElse("Most frequent character not found");
+				
+	}
+
+}

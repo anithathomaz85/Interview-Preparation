@@ -1,0 +1,12 @@
+Previous project overview and architecture
+Cron expression in the spring batch
+Kafka topic partition strategy 
+Difference between @GetMapping and @RequestMapping in Spring boot
+What @ComponentScan annotation do in a Spring boot
+How we will make a connection to Couchbase database
+
+
+Coding:
+Given String is balanced string or not
+Find the number of character present in the given string
+Sql query to find the previous day processed records in the order table

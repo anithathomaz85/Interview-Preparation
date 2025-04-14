@@ -1,0 +1,11 @@
+Brief about yourself
+check if two strings are anagaram using data structure & best time complexity
+what is Singleton class? Is it thread safe? and write code for that
+Different ways of creating beans
+Difference between @Component,@Service and @Configuration
+How can you give a userdefined name to bean
+If I need to execute a particular code snippet just after bean instantion, how would you do that - using @PostConstruct
+@Interceptors in spring security
+how can we have smooth transition from one external library to another library in spring boot with minimal changes
+difference between git merge and git rebase
+difference between global filters & gateway filters

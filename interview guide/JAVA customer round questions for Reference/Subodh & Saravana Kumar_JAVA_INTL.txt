@@ -1,0 +1,29 @@
+Subodh
+-------
+
+Asked only one programming question, 
+find two nos in an arrlist that's sum is to a target sum.
+
+Saravana Kumar
+----------------
+
+1) Overview about Kafka and its components(Kafka, producer, consumer, consumer group, broker, cluster, offset, partitions)
+ 
+2) How to achieve disaster mechanism using offset in Kafka
+ 
+3) List of HTTP status codes
+ 
+4) Hashmap and its internal working
+ 
+5) how to optimize SQL queries( asked indexing in-depth)
+ 
+6) indexing in DBMS and how to create index
+ 
+7) SOLID principles
+ 
+8) Singleton design pattern with code
+ 
+9) Difference between drop, truncate and delete
+ 
+10) what are the essential factors you consider when starting to build a web application from scratch?(Microservices,security, 
+load balancer, auto scaling, api gateway. etc..)

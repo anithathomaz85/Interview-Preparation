@@ -1,0 +1,10 @@
+package gts;
+
+/**
+ * Given an sorted array. 
+ * find the pair for given sum. 
+ * int nums[] = {1, 2, 3, 4, 5, 6}
+ * */
+public class Q100_Q4_Q15_Q21_Q54_Q55_Pair {
+
+}

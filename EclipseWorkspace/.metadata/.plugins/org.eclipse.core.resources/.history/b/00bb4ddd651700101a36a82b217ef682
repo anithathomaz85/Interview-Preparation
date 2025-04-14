@@ -1,0 +1,54 @@
+package gts;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/** 
+ * A peak element is an element that is strictly greater than its neighbors.
+	Given a 0-indexed integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks.added question in the same scenario for the given input {1, 3, -1, -3, 5, 3, 6, 7} consider 3 nos and find the highest (peak)
+	like for 
+			1, 3, -1 peakval is 3
+			3, -1, -3 peakval is 3
+			-1, -3, 5 peakval is 5
+			-3, 5, 3 peakval is 5
+			5, 3, 6 peakval is 6
+			3, 6, 7 peakval is 7
+ * 
+ * */
+public class Q89_findPeakElement {
+	
+	public static void main(String[] args) {
+		 int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
+	       findPeakElement(nums);
+	       
+	}
+
+	private static void findPeakElement(int[] nums) {
+		
+		int peakIndex = 0;
+		int n = nums.length-2;
+
+		Arrays.sort(nums);
+		for(int i=0;i<n-2;i++) {
+			int left = i+1;
+			int right = n-1;
+			while(left<right) {
+				int max = nums[i];
+				if(nums[i]< nums[left]) {
+					max = left;
+				}
+				if(max<nums[right]) {
+					max = right;
+				}
+				peakIndex = max;
+				System.out.println("("+nums[i]+ ", "+nums[left]+", "+nums[right]+") peak is at index: " + i + ", value: " + nums[peakIndex]);
+				left++;
+				right--;
+			}
+		}
+		
+		
+	}
+
+}

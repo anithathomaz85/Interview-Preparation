@@ -1,0 +1,37 @@
+Evaluator  - Piyush Aswani 
+
+1. All about previous project, your role and responsibilities?
+2. Project architecture ?
+3. Recent feature you worked in the previous project and its functionality ?
+
+4.  interface A {
+       default void method() {
+           System.out.println("A");
+        }
+    }
+
+   interface B {
+      default void method() {
+           System.out.println("B");
+        }
+    }
+
+   class C implements A, B {
+   
+	}
+    
+    public class Main {   	
+	  public static void main(String[] args) {
+        System.out.println("Hello Java");
+        C c = new C();
+        c.method();
+
+       }
+    }
+	
+	Output of the above code:
+
+5.  Print missed minimum positive number from given unsorted array.
+    Input: {1,2}          Output : 3
+    Input: {3,4,-1,1}     Output : 2
+    Input: {7,11,9,12,8}  Output : 1

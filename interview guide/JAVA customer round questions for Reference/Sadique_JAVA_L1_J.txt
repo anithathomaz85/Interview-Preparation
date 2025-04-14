@@ -1,0 +1,11 @@
+1.Check string is anagram or not
+2.What is longest none repeating substring in string str = "abcdefgabc"
+eg > abcdefg = 7
+3.Time and space complexity for both 1 & 2
+4.Interface and Abstract class
+5.checked or un checked exceptions
+6.throw and throws
+7.heap vs stack memory
+8.explain garbage collectioni n java
+9.Explain docker
+10. Custom exceptions

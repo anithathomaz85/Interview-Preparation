@@ -1,0 +1,36 @@
+L1 Interview Question
+1. Reverse the given array
+2. DIfference between abstract class and interface
+3. 2 questions ob Give the op for the given code(code was shown so I dont have the code)
+
+L2 Interview Questions
+1. Explain oops concepts
+2. compile time and runtime Polymorphism
+3. What is functional interface. Few cross questions of interfaces
+4. Given an sorted array. find the given number. int nums[] = {1, 2, 3, 4, 5, 6};
+5. Given an sorted array. find the pair for given sum. int nums[] = {1, 2, 3, 4, 5, 6};
+6. What is comparable and comparator interface.
+7. sort the list based on name. 
+Employee emp1 =new Employee (1,"Raj");
+Employee emp2 =new Employee (2,"Ram");
+Employee emp3 =new Employee (3,"Ramesh");
+Employee emp4 = null;
+List<Employee> employees = Arrays.asList(emp1,emp2,emp3, emp4);
+
+8.String name = "nitin". check if it is a palindrome.
+9. Write the logic for given input and output
+Example-
+Input: arr = [1,2,3,4]
+Output: [24,12,8,6]
+
+Input: nums = [1,1,0,3,3]
+Output: [0,0,9,0,0]
+
+10. what is throw and throws keyword
+11. Question on giving the frequency of all numbers from array
+12. Question on printing only the unique elements from the array
+13. Can write catch block without try and viceversa
+14. Explain finally, final and finalise keyword
+
+
+

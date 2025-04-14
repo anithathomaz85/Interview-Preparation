@@ -1,0 +1,27 @@
+package gts;
+
+abstract class Animals {
+	// Concrete method (can have a body)
+	public void eat() {
+		System.out.println("This animal eats food.");
+	}
+
+	// Abstract method (must be implemented by subclass)
+	public abstract void sound();
+}
+
+// Concrete class that extends the abstract class
+class Dog extends Animals {
+	// Implementing the abstract method
+	public void sound() {
+		System.out.println("Bark");
+	}
+}
+
+public class Q98_AbstractClassExample {
+	public static void main(String[] args) {
+		Dog dog = new Dog();
+		dog.eat(); // Concrete method from the abstract class
+		dog.sound(); // Implemented in the Dog class
+	}
+}

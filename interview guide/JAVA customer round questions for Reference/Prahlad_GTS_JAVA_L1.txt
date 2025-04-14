@@ -1,0 +1,9 @@
+explain oop's concepts?
+what is polymorphism?
+what is inhertance?
+is the interface can implemnts any no.of interfaces?
+internal working hashmap
+time complexity on the hashmap(balenced tree)
+psudo code for reverse the linkedList
+Given a list of strings, count the frequency of each word using Streams and return a Map with words as keys and their frequencies as values.
+Given the array of Integers, find the even numbers from the array and print the square of the even numbers as list.

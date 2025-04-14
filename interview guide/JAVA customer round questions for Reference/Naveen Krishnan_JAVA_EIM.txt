@@ -1,0 +1,8 @@
+1, about urself and project
+2, An class customer has variables id, name, age properties. Here id and name are combined to be unique. use streams to remove duplicates from teh list of customer.
+3, Use streams to get the customer with age greater than 40 in descending order.
+4, A base class has both default and arg contructor as private. Now a child class is extending it. THe child class has a public default constructor. Now from another class create an new Child object,
+		var obj = new Child();  -> what will be the output.
+5. Write a controller in spring boot with get end point. Add a header to the response body.
+6, Error handling in spring boot
+7, How do use logging globally in spring boot.

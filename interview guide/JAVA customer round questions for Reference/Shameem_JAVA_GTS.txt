@@ -1,0 +1,6 @@
+Self introduction and previous projects 
+Circuit breaker pattern and how it will behave during multi threaded approach
+Scenarios where non sql is preferred than sql. their differences
+Code for highest occurring char in a string
+WCNP and prod testing
+how we track microservices

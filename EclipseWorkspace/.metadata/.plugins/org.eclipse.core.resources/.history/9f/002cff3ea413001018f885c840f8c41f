@@ -1,0 +1,34 @@
+package gts;
+
+/*
+* 
+*  Given a set of songs, say 10 songs. Play the songs such that 
+1. All the songs in a set will get played 
+2. songs will get played in random order. 
+(Write pseudo code for the logic applied and explain the time and space complexity. 
+Answer should have only Big O(n) time and space complexity) "
+*/
+
+/**
+* 
+* Pseudocode
+* 
+* function playSongsRandomly(songList):
+    n = length of songList
+ 
+    // Step 1: Shuffle songs
+    for i from n - 1 down to 1:
+        j = random number between 0 and i
+        swap songList[i] with songList[j]
+ 
+    // Step 2: Play each song
+     * 
+    for song in songList:
+        play(song)
+ 
+*
+*/
+
+public class Q32_ShuffleSongs {
+
+}

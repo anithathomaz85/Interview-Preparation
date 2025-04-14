@@ -1,0 +1,18 @@
+Date : May 16,2024
+Duration : 30 mins 8:30-9PM IST
+
+1) Explain about your favourite project
+2) Your role in that project
+
+From here on, asked me to use notepad or any IDE
+3) How do you implement repository class in the spring boot with all the steps
+ (Right from Dependencies to be added in the pom.xml to a complete project)
+then added few more below requirements 
+  3.1) Add entity class with all the annotations
+  3.2) Add a service class with all the annotations
+  3.3) Add controller class with RESTful APIs with all the annotations
+4) As RESTful apis are stateless, how to maintain session 
+(Example: consider a e-commerce website, how to maintain cart items for any user for n number of days) 
+5) How to implement concurrency in the spring boot application
+6) How deployments are handled in WCNP and kubernetes 
+7) Keyboard shortcuts in the IDE

@@ -1,0 +1,9 @@
+M: Round Panel: Vidhyadhar
+ 
+1. Explain your most recent project along with tech dept used?
+2. What are the design patterns you known?
+3. What is circuit breaker design pattern when will you use explain bit more?
+4. What are all the request mapping api's you developed? Explain
+5. Have you known splunk?.
+6. While doing code review what are things you are going  to concentrate?.
+7. Have you know docker ?. Have you used limit in your microservices? 8. What is RETS template how will you achieve?.

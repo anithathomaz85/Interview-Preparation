@@ -1,0 +1,14 @@
+Interviewer - Abhishek Jyotishi
+ 
+1.Introduce abount yourself and questions related to my previous project.
+2.How Springboot works and Springboot annotations.
+3.If you have 1lakh records coming how would you configure the kafka producer and consumer and store it in the database and how do you create topics and partitions.
+4.Internal working of hashmap.
+5.Write a code on the custom implementation of hashmap implement get(),put() and hashing function using ArrayList and LinkedList.
+6.Questions on Asynchronous call, how it works.
+7.Questions on NoSql database.
+8.If you have thousands of records how would you manipulate process the records and store it in the database.
+9.Do you know Docker and jenkins , how it works?
+10.What collections have you used in your project and whicch one would you prefer using (gave certain scenarios).
+10.Do you know Cloud GCP,Azure and elastic search.
+11.Other scenario based questions on Kafka.

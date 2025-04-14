@@ -1,0 +1,13 @@
+
+
+1.ArrayList Vs Vector
+2.Array Vs ArrayList----Sizing
+3.from 1D array to  find two distinct elements pairs in a 1D array whose sum is 0,
+
+input int[] arr = {3, -3, 2, 4, -2, 7, -7, 1};
+
+modifications : find all pairs of distinct elements in an array whose sum equals 0, using the input {1, 2, 3, 5, -5}.
+
+4.String Reverse 
+
+5.Reverse the Linked List

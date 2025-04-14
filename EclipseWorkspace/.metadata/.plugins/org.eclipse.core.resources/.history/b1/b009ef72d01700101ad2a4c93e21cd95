@@ -1,0 +1,29 @@
+package gts;
+
+interface Animal {
+	// Abstract method (implicitly public and abstract)
+	void sound();
+
+	// Default method (can have a body)
+	default void eat() {
+		System.out.println("This animal eats food.");
+	}
+}
+
+// Concrete class that implements the interface
+class Dog implements Animal {
+	// Implementing the abstract method
+	public void sound() {
+		System.out.println("Bark");
+	}
+}
+
+public class Q98_InterfaceExample {
+
+	public static void main(String[] args) {
+		Dog dog = new Dog();
+		dog.eat(); // Default method from the interface
+		dog.sound(); // Implemented in the Dog class
+	}
+
+}

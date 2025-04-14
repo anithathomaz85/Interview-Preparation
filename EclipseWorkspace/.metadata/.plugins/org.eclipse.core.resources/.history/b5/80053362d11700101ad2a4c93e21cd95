@@ -1,0 +1,42 @@
+package gts;
+
+/**
+ * 
+ * 	Abstract Class:
+	  	Can have both abstract methods (without implementation) and concrete methods (with implementation).
+		Can have instance variables.
+		Can have constructors.	
+		Methods can have various access modifiers (private, protected, public).	
+		A class can inherit from only one abstract class (single inheritance).	
+		Suitable for providing shared code among related classes.	
+		Can maintain state using instance variables.	
+		Can provide default method implementations.	
+		Can be used to provide a common base and shared functionality for subclasses.	
+		Cannot implement multiple abstract classes.	
+		Allows subclassing to inherit both behaviour and state (instance variables).
+ * */
+abstract class Animals {
+	// Concrete method (can have a body)
+	public void eat() {
+		System.out.println("This animal eats food.");
+	}
+
+	// Abstract method (must be implemented by subclass)
+	public abstract void sound();
+}
+
+// Concrete class that extends the abstract class
+class Dogs extends Animals {
+	// Implementing the abstract method
+	public void sound() {
+		System.out.println("Bark");
+	}
+}
+
+public class Q98_AbstractClassExample {
+	public static void main(String[] args) {
+		Dogs dog = new Dogs();
+		dog.eat(); // Concrete method from the abstract class
+		dog.sound(); // Implemented in the Dog class
+	}
+}

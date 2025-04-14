@@ -1,0 +1,26 @@
+package gts;
+
+/**
+ * class Util
+	{
+	public static int add(int a, int b)
+	{
+	return a+b;
+	}
+	}
+	
+	Questions: 
+	1. is this method is thread safe or not?
+	2. logic to convert the code into non thread safe?"
+
+ * 
+ * */
+public class Q65_ThreadSafe {
+
+	class Util {
+		public static int add(int a, int b) {
+			return a + b;
+		}
+	}
+
+}

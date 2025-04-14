@@ -1,0 +1,46 @@
+package gts;
+
+/**
+ * Q20
+ * A Singleton is a design pattern in software engineering that ensures a class
+ * has only one instance and provides a global point of access to it.
+ */
+public class MySingleton {
+
+	private static MySingleton mySingletonInstance = null;
+
+	private MySingleton() {
+		System.out.println("From Singleton private constructor");
+	}
+
+// Synchronized is to ensure only one thread to access this method at a single point of time.
+	public synchronized static MySingleton getInstance() {
+
+		if (mySingletonInstance == null) {
+			mySingletonInstance = new MySingleton();
+		}
+		return mySingletonInstance;
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+
+	   System.out.println("inside clone method");
+		return new CloneNotSupportedException("Cloning of singleton class not allowed.");
+	}
+
+	public static void main(String[] args) throws CloneNotSupportedException {
+
+		System.out.println("Main method " + Thread.currentThread().getName());
+		MySingleton singleton = MySingleton.getInstance();
+		System.out.println(singleton);
+
+		MySingleton singleton2 = MySingleton.getInstance();
+		System.out.println(singleton2);
+
+		singleton.clone();
+
+		System.out.println("Main method" + Thread.currentThread().getName());
+
+	}
+}

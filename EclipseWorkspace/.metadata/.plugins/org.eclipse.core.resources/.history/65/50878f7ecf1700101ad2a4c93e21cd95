@@ -1,0 +1,9 @@
+package gts;
+
+/**
+ * Given an sorted array. find the given number.
+ *  int nums[] = {1, 2, 3, 4, 5, 6}
+ * */
+public class Q99_BinarySearch {
+
+}

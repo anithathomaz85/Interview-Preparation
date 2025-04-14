@@ -1,0 +1,16 @@
+package com.example.config;
+
+@Configuration
+public class InterceptorConfig implements WebMvcConfigurer {
+
+    @Autowired
+    private LoggingInterceptor loggingInterceptor;
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(loggingInterceptor); // Registers the LoggingInterceptor for all paths
+        // You can specify specific paths for the interceptor to apply to:
+        // registry.addInterceptor(loggingInterceptor).addPathPatterns("/api/**");
+        // registry.addInterceptor(loggingInterceptor).excludePathPatterns("/admin/**");
+    }
+}

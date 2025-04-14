@@ -1,0 +1,22 @@
+Interviewer name: Vamsi Krishna
+
+1. Rotate a matrix ( m* n) to the right by k steps
+	Eg: Input :  N = 3, M = 3, K = 2
+         12 23 34
+         45 56 67
+         78 89 91 
+
+		Output : 23 34 12
+				 56 67 45
+				 89 91 78 
+				 
+2.  Can you implement arrayList using array.
+3. If yes, write the code
+4. Spring boot annotations 
+5. How springboot work internally
+6. Design API with post, get , put and delete.
+7. What does each method does
+8. @RequestBody, @RequestParam, @PathVariable difference
+9. Difference between spring and springoot
+10. How to gracefully shutdown an application in spring. (similar purpose  as "finally" in java)
+11. spring mvc, what is model view and controller

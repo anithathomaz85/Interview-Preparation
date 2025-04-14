@@ -1,0 +1,10 @@
+Walmart GTS - 29/01/2024
+
+1. Linkedlist datastructure program for adding integer values in it and need to reverse that values
+i/p: 1->2->3->4. o/p: 4->3->2->1 need this output using Node datastructure.
+2. Abstraction vs Interface -> real time scenario how abstraction is different from interface. Do Object can be created in abstraction and interface.
+3. JAVA 8 new features -> streams, lambda expression where will use? functional interface types
+4. Spring boot Actuator -> different methods of actuator
+5. Design patterns Singleton and factory -> asked to write a pseudo code 
+6. Given an integer array need to reverse the numbers without changing the actual variable of the input array -> Using java orogram 
+7. Hibernate questions related to transaction -> How and where we will use transaction and what is the purpose of using it.

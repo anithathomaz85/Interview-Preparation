@@ -1,0 +1,18 @@
+package com.notificationApp.config;
+
+/**
+ * Application Configuration to define beans.
+ */
+@Configuration
+public class AppConfig {
+
+    @Bean(name = "emailService")
+    public NotificationService emailService() {
+        return new NotificationService("Email");
+    }
+
+    @Bean(name = "smsService")
+    public NotificationService smsService() {
+        return new NotificationService("SMS");
+    }
+}

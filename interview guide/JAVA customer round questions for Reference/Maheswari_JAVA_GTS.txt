@@ -1,0 +1,11 @@
+Interviwer : Dhanshan:
+ 
+1. Introduce about yourself
+2. Write a java program to find a character whose occurrance is the most
+3. what is Saga design pattern?
+4. How to monitor all microservices, if one microservice is calling another internally like a chain of microservices?
+(use correlation id while logging)
+5. Circuit breaker design patter (explain in detail)
+6. What is the need of fallback method?
+7. if u r implementing circuit break design pattern by your own , what you will do step by step?
+8. Difference between web client and rest client

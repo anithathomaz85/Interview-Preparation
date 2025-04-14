@@ -1,0 +1,42 @@
+L1 Evaluation
+
+Interviewer Name : Ayush Bhardwaj
+
+1. Introduction to project
+2. Question on DSA - Time complexcity of HashSet and why we need to use it.
+3. What is Time Complexity and Space Complexity
+4. What is volatile variable and synchronization
+5. What is block and function synchronization
+6. What is inheritance and polymorphism and write code with example
+7. What is heap memory and garbage collection
+8. Different types of garbage collection and how they are different from each other.
+9. What is Transitive dependency
+10. Write a program to find the next big element in a give array and explain time complexity
+Input : {2,6,3,4,9,1,10};
+Output : [6,9,4,9,10,10,-1]
+11. Write program to sort below array without inbuilt functions and explain time complexity
+int[] arr = {2,2,1,0,1,0}; (It requires graph data structure to sort the array)
+12.Abstraction and encapsulation in java
+13. What is public, protected and private access in java
+14. Deadlocks in java and how to resolve dead lock
+15. Time complexity of different sort methods like bubble sort and Arrays.sort method
+16. Which is the efficient sort method where we can have o(n) sort.
+17. How to resolve transitive dependency conflicts where same dependencies loaded more than once.
+
+
+L2 Evaluation
+
+HM round questions.
+
+1. About project
+2. About circuit breaker pattern and frame works used to implement
+3. How circuit breaker works
+4. Solid principals and explain it
+5. Ci/cd pipelines Woking
+6. How to test micro service for load and cpu usage
+7. How to monitor micro services
+8. Explain docker and kubernates
+9. Testing frame works and code coverage
+10. Points to look while code review
+11. What is kafka, broker, partition, consumer, producer
+12. How to configure partition and no of consumer so that to get better performance

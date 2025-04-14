@@ -1,0 +1,35 @@
+package gts;
+
+public class Q22_DuplicateNumberInLinkedList {
+	
+	static Node head;
+	
+	public static void main(String[] args) {
+		Node newLinedList;
+		
+		 addNode(12);
+		 addNode(12);
+		 addNode(14);
+		 addNode(15);
+		 addNode(14);
+		 addNode(19);
+		
+		 findDuplicates();
+	}
+	
+	static void addNode(int value) {
+		Node newNode = new Node(value);
+		
+		if(head == null) {
+			head = newNode;
+		}else {
+			Node temp = head;
+			//If the list is not empty, go to the last node to insert the new node at the end.
+			while(temp.next != null) {
+				temp = temp.next;
+			}
+			temp.next = newNode;
+		}
+	}
+
+}

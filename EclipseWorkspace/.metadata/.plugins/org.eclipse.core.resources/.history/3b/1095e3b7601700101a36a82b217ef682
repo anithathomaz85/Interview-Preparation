@@ -1,0 +1,12 @@
+package gts;
+
+/**
+ * Given a list of String 
+  -find the frequency of each word and print the result map using Stream
+ * */
+public class Q90_WordFrequency {
+	public static void main(String[] args) {
+		
+	}
+
+}

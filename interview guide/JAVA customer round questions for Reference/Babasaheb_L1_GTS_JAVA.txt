@@ -1,0 +1,10 @@
+1. What is the Kafka, whey we are using kafka, Kafka Architecure and components.
+2. what is offset.
+3. List<Product> ls = Arrays.asList(new Product(1,"abc","test",100.00),
+				new Product(2, "Xyz", "test1", 10.00),new Product(3, "Xyz", "test3", 50.00),new Product(4, "Ntd", "test1", 60.00));
+		
+   1.  find the productId price is greater than 55.00
+   2. find the list of products that belong to category. like retrun the Map<String,List<Product>> 
+4. Explain in details while booking the any ticket exp.Movie ticket etc.. what structure will follow while creating the rest API. 
+5. Kafka producer and consumer.
+6. Difference between Microservice and monolithic Architecture?

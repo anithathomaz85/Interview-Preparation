@@ -1,0 +1,15 @@
+Basic intro, previous experience , technology used
+2nd larger number find from arraylist, it time and space complexity, and way to increase efficiency
+{1,1,1,2,2,2,4,4,5,5,8,8,9,9} find index of the leftmost 5 , in this case is 8
+similarly index of right most of 5, here 9 the re time and space complexity, way to improve the efficiency of the program
+Factory design pattern, abstract factory design pattern
+Cache used in spring boot, reddis
+microservice pattern
+resiliency pattern
+how and why circuit breaker is used, there all concept
+if nosql is used?
+
+
+
+
+

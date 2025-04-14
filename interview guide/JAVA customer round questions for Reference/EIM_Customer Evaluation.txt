@@ -1,0 +1,14 @@
+1. Explain previous project
+2. Microservices architecture
+3. Drawbacks of monolithic and microservices - how to handle those
+vertical and horizontal scaling
+4. Design an application (complex service) with the different API
+5. limitations of GET method
+6. How to handle millions of records
+7. Collections
+8. Arraylist, HashMap
+9. Performance Tuning
+10. Normalization - what are the benefits
+11. Indexing data structures
+12. Kafka related scenario based questions
+

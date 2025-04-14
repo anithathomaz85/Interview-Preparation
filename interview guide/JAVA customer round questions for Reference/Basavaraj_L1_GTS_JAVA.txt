@@ -1,0 +1,16 @@
+Interviewer : Akhil parmar
+1) find cycle detection in linkedList -> using arrayList 
+2)why String introduce in java and why string object store seperate in heap 
+3) shallow copy and deep copy program 
+4)Arraylist vs LinkedList why why..
+5)design patter in soring boot an micro service (saga design pattern )
+6)singleton design pattern program 
+   -> real time example of singleton class
+7)spring boot 
+8)IOC and DI 
+9) how many stages in spring life cycle 
+10) java 17 feature (like sealed class and switch stmt )
+11) why lambda exp come what is use 
+  --> can we use lambda exp for all methods 
+12)whats Autobox and unboxing -> which one is good 
+13)java 8 feature 

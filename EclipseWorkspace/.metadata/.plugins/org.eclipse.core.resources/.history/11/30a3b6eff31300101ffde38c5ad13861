@@ -1,0 +1,10 @@
+package gts;
+
+public class Q1_PairsIndices {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

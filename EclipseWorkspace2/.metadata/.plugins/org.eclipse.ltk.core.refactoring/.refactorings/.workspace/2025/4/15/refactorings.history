@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Q69_SpringInteceptorDemo&apos; to &apos;Q69_InterceptorExampleApplication&apos;&#x0D;&#x0A;- Original element: &apos;Q69_SpringInteceptorDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;Q69_SpringInteceptorDemo&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Q69_SpringInteceptorDemo&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Q69_SpringInteceptorDemo" name="Q69_InterceptorExampleApplication" references="true" stamp="1744279291723" version="1.0"/>
+</session>

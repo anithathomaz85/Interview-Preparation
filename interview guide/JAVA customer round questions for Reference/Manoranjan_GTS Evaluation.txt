@@ -1,0 +1,12 @@
+
+1.How java program internally works in assembly and class loader(how its divided into different class loader)?
+2.How java program internally works in compilation phase?
+3.How java program internally works using JVM , JRE and JDK?
+4.Memory leakage
+5.If multiple unnecessary instance variable is created in class (explain the flow how to handle from starting till GC)?
+6.How to handle OutofMemory error and why program throw OutofMemory error?
+7.if we created child class Object can I call parent class method?
+8.What is Method hiding?
+9.Java program to find duplicate count and print unique element from string ?
+10.Java program to find duplicate count and print unique element from string(its contains more than millions character (Without using for loop and custom API)?
+11.Memory categorization in java?

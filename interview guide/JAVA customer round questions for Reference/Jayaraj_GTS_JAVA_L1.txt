@@ -1,0 +1,7 @@
+1. Explain previous project?
+2. what is serialization? 
+3. what is Transient and volatile keyword?
+4. what is Partition in Kafka?
+5. What is singleton and write a singleton class?
+6. Write a program to detect a loop in a custom singly linked list. The program should determine if there is a loop in the linked list and output the result?
+7. Write a program to reverse a integer array using the same variable? Without using an additional array.

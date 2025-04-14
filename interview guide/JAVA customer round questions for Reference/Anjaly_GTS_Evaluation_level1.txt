@@ -1,0 +1,11 @@
+Find triplets from the given array equals to the given sum? 
+{ -2, 1, 2, 4, 5 }
+Replace character 'a' with 'n' in a given string using stream.
+exceptions in spring boot
+checked and unchecked exceptions
+life cycle of beans
+bean scopes 
+how to configure spring boot application to hit a service n times if the call fails?
+types of garbage collectors
+which are thread safe collections in java
+how application is deployed 

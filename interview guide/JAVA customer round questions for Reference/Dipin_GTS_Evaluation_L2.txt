@@ -1,0 +1,26 @@
+L2 Evaluation
+
+Interviewer : Murali Ramanathan
+
+1.	Self Intro - Explain Past project
+2.	Which are the NoSQL databases you have experience with?
+3.	What kind of database is mongodb? (document oriented)
+4.	What would be the status calls for POST and PUT APIs?
+5.	Which are the resiliency patterns that can be used in a microservice architecture?
+6.	Experience with Docker?
+7.	Explain what is docker image and docker container?
+8.	Which are the different ways to handle exception in applications?
+9.	What all CICD pipeline tools have you used?
+10.	Kafka – Explain what is Broker, Topic, Partition and Consumer Group are.
+11.	How messages are distributed among the consumers?
+12.	Experience with Kubernetes?
+13.	Why kubernetes is required?
+14.	What is pods and services in Kubernetes?
+15.	Explain how the applications are brought up in kubernetes?
+16.	SOLID principles?
+17.	Which is your favourite in SOLID principle and why?
+18.	What are the 5 things you would consider while writing code?
+19.	How integration testing is done in your application?
+20.	What is CAP theorem?
+21. 	Docker build and run commands.
+22.	What would be one new thing which you learnt in past 3 months?

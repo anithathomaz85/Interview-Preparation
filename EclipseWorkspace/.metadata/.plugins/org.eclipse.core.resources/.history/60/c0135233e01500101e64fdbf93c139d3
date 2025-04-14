@@ -1,0 +1,30 @@
+package gts;
+
+import java.io.IOException;
+import java.util.logging.Filter;
+import javax.servlet.*;
+import java.io.IOException;
+
+public class Q70_Filter {
+
+	public class LoggingFilter implements Filter {
+
+	    public void init(FilterConfig filterConfig) throws ServletException {
+	        System.out.println("LoggingFilter initialized");
+	    }
+
+	    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+	            throws IOException, ServletException {
+
+	        System.out.println("Request received at: " + System.currentTimeMillis());
+	        
+	        // Pass the request along the filter chain
+	        chain.doFilter(request, response);
+	        
+	        System.out.println("Response sent at: " + System.currentTimeMillis());
+	    }
+
+	    public void destroy() {
+	        System.out.println("LoggingFilter destroyed");
+	    }
+	}

@@ -1,0 +1,11 @@
+package gts;
+/***
+ * Given a list of integer 
+   pick out even number - 
+   convert it into square - 
+   print it on screen  using Stream API
+ * 
+ * */
+public class Q89_EvenSquares {
+
+}

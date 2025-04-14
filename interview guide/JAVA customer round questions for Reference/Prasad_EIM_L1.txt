@@ -1,0 +1,40 @@
+1) Spring Interceptors - 
+	(In Spring MVC) --> Cased based I want to intercept each method calls ( implement logging, security, Authentication etc..)
+	HandlerInterceptor - preHandle, postHandle, afterCompletion
+ 
+ 
+2) How can I group Multiple and find distinct Custom Properties( Such as Employee)  using Java8 or above --> case based
+ 
+3) Spring Boot Transcations cased based, Transcation Order
+ 
+4) write code to create Custom Object --> filter, Map, toList and collect(Collectors.toList());
+ 
+5) Bean creation Types
+ 
+6) @Qualifier
+ 
+7) Program to write RestController, Service and Repository CURD methods
+ 
+8) Spring Boot Testing -- Junit5 
+	@SpringBootTest @ExtendWith(MockitoExtension.class), @Mock @InjectMocks 
+        @Test @Assert methods @BeforeAll @BeachEach @AfterAll @AfterEach  
+	and Tools Used to it
+9) @ComponentScan(basePackages = {"", ""}) purpose and when to use
+ 
+10) write code with same bean type and with different name and how to autowire
+ 
+11) @SpringBootApplication, @ComponentScan and Bean life cycle and internal flow
+ 
+12) difference b/w toList and collect(Collectors.toList());
+ 
+13) Bean sequence @Component and @Order
+ 
+14) Spring Boot Gateways
+ 
+15) @RequestHeader HttpHeaders headers --> how display all the headers
+ 
+16) @RequestBody how and when to use @Valid annotations
+ 
+17) @Autowired annotations with @Qualifier with same type of @Bean
+ 
+ 

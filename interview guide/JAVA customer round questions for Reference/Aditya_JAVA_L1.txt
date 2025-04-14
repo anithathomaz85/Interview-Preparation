@@ -1,0 +1,12 @@
+1. Introduction followed by roles and responsibility
+2. project architecture and some questions on the same
+3. I have an Array with a positive integer and 0 push all zero at the end and non-zero to the beginning (what is time complex and space Comp?)
+	example -> int[] arr = {2,0,8,5,0,3} & output -> {2,8,5,3,0,0}
+4. Given a Number print Fibonacci till given n number  
+	like num = 6 output - 0,1,1,2,3,5
+5. What design pattern you worked?
+6. where do you implement design patterns in your project?
+7. What is a singleton design pattern where I can use singleton and where do you implement singleton
+8. what are the annotations you used in Spring Boot?
+9. What is the use of @Transaction annotation?
+10. What is dependency injection in Spring Boot?

@@ -1,0 +1,91 @@
+Interview Question
+
+ 
+Sentence : “Hi my name is Sandeep Kumar My nick Name is Sandy”
+
+InputWord : “m”
+
+ 
+Examples:
+
+m / mM / mmM ->  Kumar My Name
+
+an / na /nah / Nan -> Sandeep Name Sandy
+
+Ea / ae / eaEEae               -> Sandeep Name
+ 
+
+Output: List<String>
+
+               distinct words from sentence that matches input word.
+
+               Matching criteria : word should contain all the distinct characters of inputword irrespective of order of characters and irrespective of case
+
+               Ordering of autosuggestion result should be in the occurrence order
+
+                              [m] -> [my name Kumar Sandy]
+
+               For empty/null inputWord all words are matching
+
+ 
+
+Regex : [a-zA-Z0-9]+
+
+ ----------------------------------------------------------------------------------------------
+
+
+Solution:
+
+
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Practice {
+
+    public static void main(String args[]) {
+
+        String s = "Hi my name is Sandeep Kumar My nick Name is Sandy";
+        //String[] s1 = s.split(" ");
+
+        List<String> m = Practice.getAutoSuggestions("mmM", s);
+        m.stream().forEach(System.out::println);
+
+
+        //Examples:
+        //m / mM / mmM ->  Kumar My Name
+        //an / na /nah / Nan -> Sandeep Name Sandy
+        //Ea / ae / eaEEae 	-> Sandeep Name
+    }
+
+    public static List<String> getAutoSuggestions(String input, String sentence) {
+        String s = "Hi my name is Sandeep Kumar My nick Name is Sandy";
+        String[] s1 = s.split(" ");
+        Set<String> set = new LinkedHashSet<>();
+
+        for (String value : s1) {
+            String inputSentenceWords = value.toLowerCase();
+            String inputWord = input.toLowerCase();
+
+            String characters = inputWord.chars()
+                    .mapToObj(w -> (char) w).distinct()
+                    .map(Object::toString).collect(Collectors.joining());
+
+            //boolean b = characters.chars().mapToObj(test -> (char) test).anyMatch(ch -> s2.contains(Character.toString(ch)));
+            //  StringBuilder str = new StringBuilder(characters);
+            int countCheck = 0;
+            for (char ch : characters.toCharArray()) {
+                if (inputSentenceWords.contains(Character.toString(ch))) {
+                    countCheck++;
+                }
+            }
+            if (countCheck == characters.length()) {
+                if (set.contains(inputSentenceWords) ||
+                        set.contains(inputSentenceWords.toLowerCase())) {
+                    set.remove(inputSentenceWords);
+                }
+                set.add(value);
+            }
+        }
+        return new ArrayList<>(set);
+    }
+}

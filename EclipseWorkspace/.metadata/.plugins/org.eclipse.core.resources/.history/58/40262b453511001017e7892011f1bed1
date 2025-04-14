@@ -1,0 +1,10 @@
+package gts;
+
+public class B_FibonacciSeriesTest {
+	
+	@Test
+	public void testFibonacciSeries1() {
+		
+	}
+
+}

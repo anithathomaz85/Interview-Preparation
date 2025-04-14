@@ -1,0 +1,29 @@
+EIM Questions:
+1. Explain previous project
+2. Microservices architecture
+3. Drawbacks of monolithic and microservices - how to handle those
+vertical and horizontal scaling
+4. Design an application (complex service) with the different API
+5. limitations of GET method
+6. How to handle millions of records
+7. Collections
+8. Arraylist, HashMap
+9. Performance Tuning
+10. Normalization - what are the benefits
+11. Indexing data structures
+12. Kafka related scenario based questions
+
+GTS Questions:
+1. Explain previous project
+2. How will you handle when our application didnt get messages from kafka consumer? And if consumer gets the message how will you handle the messages to restore when the application is needed to process the particular message?
+3. Program to find duplicates from integer array?
+4. Functional interface, interface, abstract class
+5. How to achieve Multiple inheritance using interface?
+6. Hashcode and equals method uses?
+7. Monolithic vs microservices? When will you use which approach?
+8. Why we are going for non relational databases
+9. Spring boot vs spring? 
+10.Spring boot annotations.
+11.Java 8 streams
+12.Kafka failover scenario
+13.Hashmap vs Concurrent Hashmap 

@@ -1,0 +1,8 @@
+Basic intro, previous experience , technology used.
+Alpha numeric string a123b23c. find occurrence of each element (time complexity and space complexity)
+integer number 12312 find occurrence without using build in method.
+microservices benefits
+RDBMS benefits
+why normalisation used.
+http methods 
+difference between array list and linked list

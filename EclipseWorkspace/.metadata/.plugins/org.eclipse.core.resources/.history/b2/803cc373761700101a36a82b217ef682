@@ -1,0 +1,5 @@
+package com.notificationApp.service;
+
+public class NotificationService {
+
+}

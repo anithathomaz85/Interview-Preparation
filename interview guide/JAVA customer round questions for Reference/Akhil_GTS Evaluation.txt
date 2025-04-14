@@ -1,0 +1,53 @@
+Interviewer Name : Ayush Bhardwaj
+L1 evaluation
+
+1. Program to find the next big element in a given list and explain time/space complexity
+Input : {2,4,1,3,5};
+Output : [4,5,3,5,-1]
+2. Program to find sub-arrays from a given array which have the given sum
+Input :  arr = {2,4,1,3,5,1} sum=6
+Output : subarrays = {2,4},{5,1}
+3. time complexity and space complexity
+4. complexities of different sorting algorithms
+5. graphing data structure
+6. abstraction vs inheritance - concepts and implementation
+7. encapsulation vs abstraction difference
+8. explain override/overload
+9. kafka concepts
+10. broker and consumer relationship
+11. partition design
+12. failover case
+13. transitive dependency
+14. how to fix its conflicts
+15. cache vs database
+16. why one is preferred over other for their use cases
+
+L2 Evaluation
+
+Interviewer : Murali Ramanathan
+
+Questions
+1.	Experience and past project details – tech stack.
+2.	Which design patterns will you use to ensure your microservices can remain resilient even if downstream microservices have some issues. (Circuit Breaker)
+3.	What can we use to implement this circuit breaker pattern in our application?
+4.	What all CICD pipeline tools have you used?
+5.	Docker and Kubernetes
+6.	Why do we need to use Kubernetes?
+7.	Docker working – what are images and containers? 
+8.	Docker commands
+9.	Kafka – Explain what Broker, Topic, Partition and Consumer Group are.
+10.	Why do we need multiple partitions for one topic? Based on what logic are the messages pushed to partitions? 
+11.	Partition and Consumer/Consumer Group relationship.
+12.	PUT vs POST difference.
+13.	What Rest method is used for each of the CRUD operations?
+14.	What are the HTTP response codes used in different scenarios?
+15.	Explain different layers in a typical microservice.
+16.	Exception handling in your microservice.
+17.	SQL vs NoSQL – why one is preferred over other?
+18.	Different NoSQL databases
+19.	Distributed caching
+20.	Explain SOLID principles.
+21.	What common things would you ensure when you are coding.
+22.	Unit and integration testing and what toolkits have you used?
+
+

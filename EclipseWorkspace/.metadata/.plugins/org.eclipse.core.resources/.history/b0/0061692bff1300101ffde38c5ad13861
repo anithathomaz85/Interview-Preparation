@@ -1,0 +1,57 @@
+package gts;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Q22_DuplicateNumberInLinkedList {
+
+    Node head;
+
+    public static void main(String[] args) {
+        Q22_DuplicateNumberInLinkedList obj = new Q22_DuplicateNumberInLinkedList();
+
+        obj.addNode(12);
+        obj.addNode(12);
+        obj.addNode(14);
+        obj.addNode(15);
+        obj.addNode(14);
+        obj.addNode(19);
+
+        obj.findDuplicates();
+    }
+
+    private void addNode(int value) {
+        Node newNode = new Node(value);
+
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
+    }
+
+    private void findDuplicates() {
+        Set<Integer> set = new HashSet<>();
+        Node temp = head;
+        boolean found = false;
+
+        while (temp != null) {
+            if (!set.add(temp.data)) {
+                System.out.println("Duplicate found : " + temp.data);
+                found = true;
+            }
+            temp = temp.next;
+        }
+
+        if (!found) {
+            System.out.println("No Duplicate found");
+        }
+    }
+}

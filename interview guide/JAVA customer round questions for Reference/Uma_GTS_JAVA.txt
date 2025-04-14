@@ -1,0 +1,11 @@
+1. Functional Interface theory and write a code for the functional interface and show its working
+2. Lambda expressions - Implementation
+3. OptionalClass
+4. Given a list of string, find the maximum occurence of the word and if 2 words has the same highest occurence, sort it lexographically and
+   print the first element (Use streams for efficient coding)
+5. Kafka producer implementation (Explain the coding steps one by one)
+6. How to handle Kafka consumer exceptions (data exceptions)
+7. Given an integer array, Find the first repeating element in an array of integers. 
+    Input: arr[] = {10, 5, 4, 9,6, 120, 4, 6, 10} . 
+	Output --> 4
+8. Architecture of the last projects worked

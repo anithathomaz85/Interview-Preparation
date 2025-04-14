@@ -1,0 +1,17 @@
+GTS - Round1
+============
+
+Interviewer Name : Kanwaljith Singh
+
+1. Explaing your current project with complete architecture diagram (First 30 minutes questions based on the project itself)
+2. Write a java program to implement linked list and print it in reverse order.
+3. What are the advantages of using Relational database over NoSQL
+4. What is CAP theorem?
+5. What are ACID properties? Explain in detail with example.
+6. What is the diamond problem associated with default methods in interfaces?
+7. Explain the working of JVM
+8. What is Garbage collection? How its happening?
+9. Explain different types of GC - serial, parallel, concurrent, GI..
+10. How to fix the vulnerabilities present as part of maven dependencies?
+11. Which maven command you use to list down the vulnerable dependencies?
+12. What does the command "mvn clean install" do? Explain.

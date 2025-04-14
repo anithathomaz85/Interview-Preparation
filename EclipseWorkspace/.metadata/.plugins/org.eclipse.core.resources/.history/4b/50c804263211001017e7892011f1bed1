@@ -1,0 +1,62 @@
+package gts;
+
+import java.util.Arrays;
+
+//https://leetcode.com/problems/move-zeroes/
+/*
+ * Array with a positive integer and 0.
+ * Push all zero at the end and non-zero to the beginning 
+   example -> int[] arr = {2,0,8,5,0,3} & output -> {2,8,5,3,0,0}
+ * */
+//Time Cmplexity - O(n) coz we iteratated thru the array once
+//Space Complexity - O(1) coz we donot take any extra space
+public class A_MoveZerosToEnd {
+
+	public static void main(String[] args) {
+       
+        attempt1();
+        attempt2();
+        
+    }
+
+	private static void attempt1() {
+    	 int[] arr = {2, 0, 8, 5, 0, 3};
+    	 moveZerosToEnd(arr);
+         System.out.println(Arrays.toString(arr));		
+	}
+
+	public static void moveZerosToEnd(int[] arr) {
+        int index = 0; // Pointer for placing non-zero elements
+
+        // Move all non-zero elements to the front
+        for (int num : arr) {
+            if (num != 0) {
+                arr[index++] = num;
+            }
+        }
+
+        // Fill remaining positions with zero
+        while (index < arr.length) {
+            arr[index++] = 0;
+        }
+    }
+	
+    private static void attempt2() {
+		int[] arr= {2, 0, 8, 5, 0, 3};
+		
+		int index=0;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]!=0) {
+				arr[index]=arr[i];
+				index++;				
+			}
+		while(index<arr.length) {
+			arr[index++]=0;
+		}
+		System.out.println(arr);
+		}
+		
+		
+	}
+}
+

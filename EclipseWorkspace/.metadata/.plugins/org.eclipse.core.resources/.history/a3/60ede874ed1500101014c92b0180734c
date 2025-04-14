@@ -1,0 +1,19 @@
+import java.io.IOException;
+import javax.servlet.*;
+
+public class MyFilter implements Filter {
+
+    public void init(FilterConfig filterConfig) throws ServletException {
+        System.out.println("Filter initialized");
+    }
+
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+            throws IOException, ServletException {
+        System.out.println("Filtering request");
+        chain.doFilter(request, response); // continue the request
+    }
+
+    public void destroy() {
+        System.out.println("Filter destroyed");
+    }
+}

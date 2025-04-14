@@ -1,0 +1,20 @@
+package gts;
+
+public class Q47_ArrayListUsingArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class ArrayListUsingArray<T> {
+    private static final int INITIAL_CAPACITY = 10;
+    private T[] elements;
+    private int size = 0;
+
+    public CustomArrayList() {
+        elements = (T[]) new Object[INITIAL_CAPACITY];
+    }  
+}

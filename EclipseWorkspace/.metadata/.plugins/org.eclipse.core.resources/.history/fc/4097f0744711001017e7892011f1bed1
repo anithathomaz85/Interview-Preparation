@@ -1,0 +1,5 @@
+package gts;
+
+class C_NextGreaterElement {
+
+}

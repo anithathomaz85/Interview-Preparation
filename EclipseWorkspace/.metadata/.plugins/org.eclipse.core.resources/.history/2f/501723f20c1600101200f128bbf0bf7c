@@ -1,0 +1,11 @@
+package gts;
+
+/***
+ * Custom Bean - Employee ( Id, Name, Age, Gender)  
+		1) Find Unique list - equals and hashcode , streams with distinct()
+		
+		2) Find List of employees age between 25 and 35 (Use filter )  * 
+ * */
+public class Q67_CustomBeanEmployee {
+
+}

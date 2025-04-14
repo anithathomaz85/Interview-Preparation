@@ -1,0 +1,3 @@
+1.Explanation of Previous Project: This should include project details, tech stack, roles, and responsibilities.
+2.Coding Practices: This should include code coverage, code formatting, sonarqube.
+3.Sql vs mongo: Use cases. When to use and why?

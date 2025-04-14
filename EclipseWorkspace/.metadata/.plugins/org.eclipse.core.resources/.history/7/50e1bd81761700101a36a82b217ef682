@@ -1,0 +1,5 @@
+package com.notificationApp.config;
+
+public class AppConfig {
+
+}

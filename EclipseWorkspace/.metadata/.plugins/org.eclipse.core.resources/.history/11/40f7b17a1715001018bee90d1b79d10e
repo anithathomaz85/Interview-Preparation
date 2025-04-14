@@ -1,0 +1,40 @@
+package gts;
+
+/***
+ *  Reverse the Linked List.
+ *  
+ * CALL FLOW:
+		printReverse(1)
+		 └── printReverse(2)
+		      └── printReverse(3)
+		           └── printReverse(null) → returns
+		           ← print 3
+		      ← print 2
+		 ← print 1
+ * 
+ * */
+public class Q58_Q11_LinkedListReverse {
+
+	public static void main(String[] args) {
+		Node head = new Node(1);
+		head.next = new Node(2);
+		head.next.next = new Node(3);
+		head.next.next.next = new Node(4);
+		head.next.next.next.next = new Node(5);
+		head.next.next.next.next.next = new Node(6);
+		
+		printReverse1(head);
+		System.out.print("null");
+		printReverse1(head);
+	}
+
+
+	public static void printReverse1(Node head) {
+	        if (head == null) {
+	            return;
+	        }	        
+	        printReverse1(head.next);  
+	        System.out.print(head.data + " -> "); 
+	       
+	    }	
+}

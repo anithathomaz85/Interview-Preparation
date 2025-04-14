@@ -1,0 +1,40 @@
+package gts;
+
+public class Q16_ValidMatrix {
+	public static void main(String[] args) {
+		int[][] matrix1 = {
+	            {1, 2, 3},
+	            {3, 1, 2},
+	            {2, 3, 1}
+	        };
+
+	        int[][] matrix2 = {
+	            {1, 1, 1},
+	            {1, 2, 3},
+	            {1, 2, 3}
+	        };
+
+	        System.out.println(checkValid(matrix1)); // true
+	        System.out.println(checkValid(matrix2)); // false
+	}
+	
+	 public static boolean checkValid(int[][] matrix) {
+	        int n = matrix.length;
+
+	        for (int i = 0; i < n; i++) {
+	            Set<Integer> rowSet = new HashSet<>();
+	            Set<Integer> colSet = new HashSet<>();
+
+	            for (int j = 0; j < n; j++) {
+	                rowSet.add(matrix[i][j]);     // Row i
+	                colSet.add(matrix[j][i]);     // Column i
+	            }
+
+	            if (rowSet.size() != n || colSet.size() != n) {
+	                return false;
+	            }
+	        }
+
+	        return true;
+	    }
+}

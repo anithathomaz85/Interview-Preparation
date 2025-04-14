@@ -1,0 +1,18 @@
+package gts;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import org.junit.jupiter.api.Test;
+
+public class B_FibonacciSeriesTest {
+	
+	@Test
+	public void testFibonacciSeries1() {
+		 ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+		 System.setOut(new PrintStream(outputStream));
+		 B_FibonacciSeries.main(new String[]{});
+
+	}
+
+}

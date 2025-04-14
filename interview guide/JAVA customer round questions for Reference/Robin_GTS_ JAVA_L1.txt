@@ -1,0 +1,15 @@
+1. Explain previous project
+2. Exception Handling
+3. How can you find the maximum age of employees using a SQL query?
+4. Demonstrate how to search for specific values in a list and calculate the time complexity of the implemented solution.
+5. Explain caching mechanisms in Spring Boot
+6. Explain where and how usernames and passwords are securely stored, such as using a Key Vault or an encrypted configuration server.
+7. Spring boot Actuator -> different methods of actuator
+8. Difference Between JPA and Hibernate
+9. Design pattern
+10. Delete duplicate rows from a table, you need a way to identify and remove duplicate, especially when there is no unique or primary key to distinguish the row.
+11. What are Kafka partitions, and where are they used in applications?
+12. Create a syntax check code for matching parentheses and braces. For example:
+
+({}) -> correct syntax.
+({} -> syntax is wrong because ) is missing. How can we detect if the syntax is wrong due to missing parentheses )
