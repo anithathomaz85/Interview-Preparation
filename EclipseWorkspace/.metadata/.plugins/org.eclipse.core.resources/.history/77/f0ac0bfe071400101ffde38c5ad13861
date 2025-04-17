@@ -1,8 +1,0 @@
-package gts;
-
-public class Q25_CountStringCharacters {
-	public static void main(String[] args) {
-		String str = "Hello World";
-		countOfCharacter(str);
-	}
-}

@@ -13,8 +13,9 @@ public class Q091_MaxValueFinder {
 		List<Integer> numbers = Arrays.asList(10, 25, 33, 99, 4, 76);
 
 		// using streams
-		int max = numbers.stream().max(Integer::compareTo)
-				.orElseThrow(() -> new NoSuchElementException("List is empty"));
+		int max = numbers.stream()
+						.max(Integer::compareTo)
+						.orElseThrow(() -> new NoSuchElementException("List is empty"));
 		System.out.println("Maximum value using streams: " + max);
 
 		// without streams

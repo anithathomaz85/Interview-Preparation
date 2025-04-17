@@ -30,10 +30,12 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="true"/>
 		<list key="findhistory">
+			<item value="CustomHashMap"/>
 			<item value="Q020_Q28_Singleton"/>
 			<item value="Employee"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Q120_HashMapSimulation"/>
 			<item value="Q028_Q20_Singleton"/>
 			<item value="CustomEmployee"/>
 		</list>

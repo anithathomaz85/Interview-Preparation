@@ -21,10 +21,14 @@ public class Q097_ReverseArray {
 	
 	 public static void main(String[] args) {
 	        int[] arr = {10, 20, 30, 40, 50};
+	        System.out.print("Original array: ");
+	        for (int num : arr) {
+	            System.out.print(num + " ");
+	        }
 	        
 	        reverseArray(arr);
 	        
-	        System.out.print("Reversed array: ");
+	        System.out.print("\nReversed array: ");
 	        for (int num : arr) {
 	            System.out.print(num + " ");
 	        }
