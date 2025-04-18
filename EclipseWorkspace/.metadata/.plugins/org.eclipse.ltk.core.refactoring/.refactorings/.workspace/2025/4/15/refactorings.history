@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;com.notificationApp&apos;" deleteContents="true" description="Delete resource &apos;com.notificationApp&apos;" element1="/com.notificationApp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1744445601913"/>&#x0A;<refactoring comment="Rename resource &apos;com.notificationApp&apos; to &apos;Q74_NotificationServiceApp&apos;" description="Rename resource &apos;com.notificationApp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/com.notificationApp" name="Q74_NotificationServiceApp" stamp="1744446211356" updateReferences="true"/>
-</session>

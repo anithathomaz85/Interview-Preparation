@@ -15,7 +15,7 @@ public class Q002_FibonacciSeriesTest {
 		 System.setOut(new PrintStream(outputStream));
 		 Q002_FibonacciSeries.main(new String[]{});
 		 System.setOut(System.out);
-		 String expectedOutput = "0 1 1 2 3 5\n";
+		 String expectedOutput = "0 1 1 2 3 5";
 		 assertEquals(expectedOutput, outputStream.toString().trim());
 	}
 

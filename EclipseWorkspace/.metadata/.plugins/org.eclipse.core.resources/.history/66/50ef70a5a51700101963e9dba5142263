@@ -1,9 +1,0 @@
-package gts;
-
-/***
- * 87. What is longest none repeating substring in 
- * string str = "abcdefgabc" eg > abcdefg = 7
- * */
-public class Q87_LongestSubString {
-
-}

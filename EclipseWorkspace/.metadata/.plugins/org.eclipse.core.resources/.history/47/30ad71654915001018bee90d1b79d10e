@@ -1,7 +1,0 @@
-package gts;
-
-public class Q53_InheritanceScenario {
-	public static void main(String[] args) {
-		var obj = new Child();
-	}
-}

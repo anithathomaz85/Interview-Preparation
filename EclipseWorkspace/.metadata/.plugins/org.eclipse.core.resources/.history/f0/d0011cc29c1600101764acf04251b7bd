@@ -1,9 +1,0 @@
-package gts;
-
-/**
- * Demonstrate how to search for specific values in a list 
- * and calculate the time complexity of the implemented solution.
- * */
-public class Q79_SearchLinkedList {
-
-}

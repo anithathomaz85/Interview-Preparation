@@ -1,5 +1,8 @@
 package gts;
 
+/**
+ * Write 2 threads and execute them one by one (not parallaly)
+ * */
 public class Q135_SequentialThreads {
 
     public static void main(String[] args) {
