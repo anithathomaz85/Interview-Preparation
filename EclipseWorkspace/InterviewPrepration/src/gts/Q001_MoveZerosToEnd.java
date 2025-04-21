@@ -10,58 +10,55 @@ import java.util.Arrays;
  * */
 /**
  * 
- * Time Cmplexity - O(n) 
-   The algorithm traverses the array twice (once for non-zeros, once for filling zeros) → O(n)
-  
-   Space Complexity - O(1) coz we donot take any extra space
-   It uses only a constant amount of extra space (just a variable index) → O(1) (in-place approach)
 **/
 public class Q001_MoveZerosToEnd {
-
 	public static void main(String[] args) {
-       
-        attempt1();
-        attempt2();
-        
-    }
 
-	private static void attempt1() {
-    	 int[] arr = {2, 0, 8, 5, 0, 3};
-    	 moveZerosToEnd(arr);
-         System.out.println("Attemp1: "+Arrays.toString(arr));		
+		int[] arr = { 2, 0, 8, 5, 0, 3 };
+		int[] result = new int[arr.length];
+
+		result = moveZerosToEnd(arr);
+		System.out.println(Arrays.toString(result));
+
+		moveZerosToEndInPlace(arr);
+		System.out.println(Arrays.toString(arr));
+
 	}
 
-	public static void moveZerosToEnd(int[] arr) {
-        int index = 0; // Pointer for placing non-zero elements
+	/**
+	 * Time Complexity - O(n) The algorithm traverses the array → O(n) 
+	 * Space Complexity - O(n) created a new array result of size n
+	 */
+	public static int[] moveZerosToEnd(int[] arr) {
+		int[] result = new int[arr.length];
+		int j = 0;
 
-        // Move all non-zero elements to the front
-        for (int num : arr) {
-            if (num != 0) {
-                arr[index++] = num;
-            }
-        }
-
-        // Fill remaining positions with zero
-        while (index < arr.length) {
-            arr[index++] = 0;
-        }
-    }
-	
-    private static void attempt2() {
-		int[] arr= {2, 0, 8, 5, 0, 3};
-		
-		int index=0;
-		for(int i=0;i<arr.length;i++) {
-			if(arr[i]!=0) {
-				arr[index++]=arr[i];
-				index++;				
+		for (int i = 0; i <= arr.length - 1; i++) {
+			if (arr[i] > 0) {
+				result[j] = arr[i];
+				j++;
 			}
 		}
-		while(index<arr.length) {
-			arr[index++]=0;
+		return result;
+	}
+
+	/**
+	 * Function to move zeros to the end (in-place) 
+	 * Time Complexity - O(n) The algorithm traverses the array → O(n) 
+	 * Space Complexity - O(1) In place
+	 * approach
+	 */
+	public static void moveZerosToEndInPlace(int[] arr) {
+		int index = 0;
+
+		for (int num : arr) {
+			if (num != 0) {
+				arr[index++] = num;
+			}
 		}
-		System.out.println("Attemp2: "+Arrays.toString(arr));		
-		
+
+		while (index < arr.length) {
+			arr[index++] = 0;
+		}
 	}
 }
-
