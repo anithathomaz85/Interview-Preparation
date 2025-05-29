@@ -60,6 +60,7 @@ public class Q032_ShuffleSongs {
  			int j = rand.nextInt(i + 1); // random index from 0 to i
  			// Swap list[i] with list[j]
  			Collections.swap(list, i, j);
+ 			System.out.println(list);
 		}
 	}
  

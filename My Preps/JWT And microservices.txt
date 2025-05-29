@@ -1,0 +1,51 @@
+how a JWT token issued from UserService is used in other microservices
+======================================================================
+
+stateless
+The server does not store any session information about the user.
+All this info is embedded inside the token—so the server doesn’t need to store it.
+
+1. Login in UserService
+	User sends credentials → UserService verifies them.
+	JWT is created 
+	JWT is sent back to the client (e.g., frontend app).
+	This token contains all the necessary user data (like userId, roles, etc.) and is self-contained.
+	All this info is embedded inside the token—so the server doesn’t need to store it.
+
+
+2.Calling Other Services
+	The client now includes the JWT token in the Authorization header when calling other services:
+	GET /employee/profile
+	Authorization: Bearer <JWT-TOKEN>
+
+3.Validation in Other Services 
+	Each microservice does two things:
+		Validates the JWT using a shared secret or public key.
+		Extracts the claims (e.g., user ID, role, expiration time, etc.) and uses them in its business logic.
+		Then they read information inside the JWT (like the user's ID, role, or email).
+		Based on this info, they decide what the user is allowed to do or what data to show the user.
+
+4. Usage in Business Logic
+	After extracting the userId from the token, services can:
+	Get employee data from DB
+	Personalize responses
+	Enforce role-based access
+
+@GetMapping("/profile")
+public ResponseEntity<Employee> getProfile(HttpServletRequest request) {
+    String userId = (String) request.getAttribute("userId");
+    return ResponseEntity.ok(employeeService.getByUserId(userId));
+}
+
+
+
+🧍 Real-Life Analogy (Security Gate Pass)
+Imagine you're visiting an office building:
+At the main gate, you're issued a visitor pass (JWT) with:
+	Your name
+	The company you're visiting
+	The time the pass expires
+When you reach different office rooms (microservices):
+	They don’t ask for your ID again.
+	They just scan your visitor pass (JWT).
+	If it's valid, they let you in and maybe guide you based on your details (e.g., showing you to the right floor).

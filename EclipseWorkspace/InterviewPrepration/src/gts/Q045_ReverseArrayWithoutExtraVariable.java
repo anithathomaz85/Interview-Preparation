@@ -1,7 +1,7 @@
 package gts;
 
 /**
- * Write a program to reverse a integer array using the same variable? 
+ * Write a program to reverse a integer array using the same variable
  * Without using an additional array.
 
  * */
@@ -23,7 +23,7 @@ public class Q045_ReverseArrayWithoutExtraVariable {
 	
 	public static void printArray(int [] arr) {
 		for(int num : arr) {
-			System.out.println(num + "  ");
+			System.out.print(num + "  ");
 		}
 		System.out.println();
 	}

@@ -1,0 +1,51 @@
+Mockito?
+Mockito is a Java-based mocking framework used for unit testing. It allows you to create mock objects of dependencies, so you can test classes in isolation — without relying on actual implementations like databases, APIs, or services.
+Key Features of Mockito
+	Create mocks (@Mock)
+	Inject mocks (@InjectMocks)
+	Define behavior (when(...).thenReturn(...))
+	Verify method calls (verify(...))
+	No need to use a full Spring context (fast unit tests)
+
+@Mock
+@Mock is a Mockito annotation used to create a mock object of a class or interface.
+It simulates the behavior of real objects without executing the actual logic.
+@Mock
+private UserService userService;
+================================================================================================================
+@InjectMocks is used to automatically inject mock dependencies (marked with @Mock) into the class you want to test.
+@InjectMocks
+private UserController userController;
+Take the mocks I’ve declared and inject them into userController where needed — via constructor, field, or setter.
+
+
+@Inject is a Java standard annotation from javax.inject, used for dependency injection.
+It’s commonly used in frameworks like Spring, Jakarta EE, and CDI to inject dependencies automatically.
+@Inject
+private SomeService someService;
+In Spring projects, @Autowired is more commonly used, but @Inject is functionally similar.
+
+================================================================================================================
+MockMvc is a Spring testing tool used to test Spring MVC controllers without starting the full server.
+It allows you to:
+	Simulate HTTP requests (like GET, POST) to controller endpoints
+	Validate responses (status, JSON content, headers, etc.)
+	Perform fast unit or slice tests of your web layer
+
+@Autowired
+private MockMvc mockMvc;
+
+@Test
+void testHelloEndpoint() throws Exception {
+    mockMvc.perform(get("/hello"))
+           .andExpect(status().isOk())
+           .andExpect(content().string("Hello, World"));
+}
+================================================================================================================
+Integration Testing?
+Integration Testing checks if multiple components of your application work together as a whole — like controllers, services, repositories, and DBs.
+In Spring Boot, integration tests often use:
+	@SpringBootTest to load the full context
+	Real or in-memory databases (like H2)
+	Actual HTTP communication or MockMvc
+	Assertions on end-to-end behavior

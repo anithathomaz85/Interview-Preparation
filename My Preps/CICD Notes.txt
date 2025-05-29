@@ -1,0 +1,82 @@
+CI/CD
+=====
+
+In our CI/CD setup, developers push code changes to GitHub. A webhook triggers Jenkins, which pulls the latest code and starts a pipeline. Jenkins runs tests, builds a Docker image, and pushes it to Docker Hub. Kubernetes then pulls this image and deploys it into the cluster. The scheduler places the pods on worker nodes, while the controller manager and etcd ensure the health and consistency of the cluster. This automation ensures smooth and consistent deployments with high availability.
+
+
+CI/CD Process Using Docker, Jenkins, GitHub, and Kubernetes
+============================================================
+
+
+1. Code pushed to GitHub:
+	Developers work in feature branches.
+	Only merging to the main branch triggers deployment.
+	Feature branches do not trigger deployment, only CI (test, build checks).
+	    Continuous Integration (CI)
+		As soon as you push code to a feature branch (e.g. feature/new-signup), your CI server (Jenkins) will automatically:
+		Pull your branch’s code
+		Compile or build the application artifact (e.g., JAR, WAR)
+		Run unit tests, linting, static code analysis, maybe even code coverage or security scans
+		If any of those checks fail, Jenkins will mark the build as “failed” and notify you—so you know there’s something to fix before you merge.
+	    No Deployment Steps
+		Because it’s a feature branch and not main, Jenkins stops after those checks.
+		It won’t build Docker images, push to Docker Hub, or invoke Kubernetes to deploy your code anywhere.
+	Once your feature looks good and you merge into main, Jenkins will see that “push to main” event and run the full pipeline, including Docker 		builds and Kubernetes deployments.
+
+2. GitHub is connected to Jenkins:
+	A webhook is set up.
+	Push to main triggers the CI/CD pipeline in Jenkins.
+
+3. Jenkins (CI/CD tool) does the following:
+	Pulls code from GitHub.
+	Executes Jenkinsfile (written in Groovy).
+	Runs unit and integration tests.
+	Builds the application artifact (e.g., a JAR).
+	Builds Docker image using the Dockerfile.
+	Pushes the image to Docker Hub.
+
+4. Docker Overview:
+	Earlier, virtualization (e.g., VirtualBox) required creating a Linux VM on Windows to run Linux apps.
+	With Docker, the app runs in containers using the host OS kernel (e.g., Windows kernel), saving resources.
+	Docker Engine runs containers/images.
+	The Dockerfile contains app packaging instructions.
+	The Docker image is a self-contained app package with no external dependencies (e.g., no DB/cache).
+	Running images are called containers.
+
+5. Kubernetes Deployment (K8s):
+	After Jenkins builds and pushes the Docker image, we need to deploy it into a real environment. That’s where Kubernetes comes in.
+
+	1.Jenkins triggers Kubernetes:
+		Jenkins runs a script or another Jenkinsfile (dedicated for K8s) that contains kubectl commands.
+		These commands apply the deployment YAML files (like user-deployment-service.yaml).
+
+	2. Kubernetes pulls the Docker image:
+		From Docker Hub (where Jenkins pushed the image earlier).
+		This image is what gets deployed as a container inside a pod.
+
+	3. Deployment spec file (e.g., user-deployment-service.yaml):
+		Tells Kubernetes how many pods to create.
+		What Docker image to use.
+		What ports to open.
+		Optional: Env vars, resource limits, etc.
+
+	4. Rolling Updates:
+		Instead of stopping everything and deploying, K8s does step-by-step deployment.
+		It updates one pod at a time → no downtime for users.
+
+	5. Staging Environment:
+		Before going to production, your app can be deployed to a staging namespace/environment.
+		Used to run integration tests with other services.
+
+6. Kubernetes handles everything else:
+		Scheduler decides where to place new pods (based on available resources).
+		etcd keeps track of current state (e.g., how many pods are running).
+		Controller manager monitors pods—if one crashes, it restarts automatically (self-healing).
+
+
+📄 Key Files:
+	Dockerfile: Defines how the Docker image is built.
+	Jenkinsfile: Defines CI/CD pipeline steps.
+	docker-compose.yaml: (Not used here) Brings up all services locally.
+	user-deployment-service.yaml: Kubernetes deployment spec (can vary for app, DB, Kafka, etc).
+

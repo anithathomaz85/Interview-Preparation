@@ -4,15 +4,15 @@ class ReverseLinkedList {
 	private Node head;
 
 	public void addNode(int data) {
-		Node Node = new Node(data);
+		Node node = new Node(data);
 		if (head == null) {
-			head = Node;
+			head = node;
 		} else {
 			Node current = head;
 			while (current.next != null) {
 				current = current.next;
 			}
-			current.next = Node;
+			current.next = node;
 		}
 	}
 

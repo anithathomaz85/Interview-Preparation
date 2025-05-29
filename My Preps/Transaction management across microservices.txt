@@ -1,0 +1,14 @@
+Transaction management across microservices 
+===========================================
+
+
+In our project, each microservice—like UserService, EmployeeService, SkillsetService, JobService, and NotificationService—has its own dedicated database. This ensures data isolation, independence, and loose coupling between services.
+
+Since traditional ACID transactions can't span multiple services, we follow the eventual consistency principle using the Saga pattern, we follow the Saga pattern to manage transactions across microservices.
+For example, when a new user is onboarded:
+	UserService first creates the user and publishes a success event.
+	EmployeeService, SkillsetService, and JobService listen to this event and perform their respective actions.
+	Or, it publishes an event that other services consume to carry out their own updates
+	If any service fails, we handle compensating actions or retries through message queues or dead-letter queues.
+
+To maintain system stability, especially during partial failures, we use the Circuit Breaker pattern—implemented using tools like Resilience4j. If a service like SkillsetService or NotificationService becomes unresponsive, the circuit breaker opens and redirects requests to fallback methods. This prevents cascading failures and allows the system to degrade gracefully while still offering a reliable user experience.

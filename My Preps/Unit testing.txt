@@ -1,0 +1,185 @@
+// HelloWorld.java
+public class HelloWorld {
+    private HelloService helloService;
+
+    // Constructor injection
+    public HelloWorld(HelloService helloService) {
+        this.helloService = helloService;
+    }
+
+    public String sayHello(String name) {
+        return helloService.getGreeting(name);
+    }
+}
+
+
+=========================================
+
+public class HelloWorldTest {
+
+  @Test
+    void testSayHello() {
+
+	HelloService mockService = Mockito.mock(HelloService.class); //manual mocking
+   	Mockito.when(mockService.getGreeting("Alice")).thenReturn("Hello, Alice");
+
+ 	HelloWorld helloWorld = new HelloWorld(mockService); //manual mocking
+        String result = helloWorld.sayHello("Alice");	
+
+	assertEquals("Hello, Alice", result);
+
+   }
+}
+
+
+=========================================
+
+public class HelloWorldTest {
+
+    @Mock
+    private HelloService helloService;
+
+    @InjectMocks
+    private HelloWorld helloWorld;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this); // initializes @Mock and @InjectMocks
+    }
+
+    @Test
+    void testSayHello() {
+        when(helloService.getGreeting("Alice")).thenReturn("Hello, Alice");
+        assertEquals("Hello, Alice", helloWorld.sayHello("Alice"));
+    }
+}
+
+*******************************************************************************************************************
+
+
+
+public class HelloWorld {
+
+    @Autowired
+    private HelloService helloService;
+
+    public String sayHello(String name) {
+        return helloService.getGreeting(name);
+    }
+}
+
+=========================================
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class HelloWorldTest {
+
+    @Mock
+    private HelloService helloService;
+
+    @InjectMocks
+    private HelloWorld helloWorld;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this); // Initializes the mocks and injects them
+    }
+
+    @Test
+    void testSayHello() {
+        when(helloService.getGreeting("Alice")).thenReturn("Hello, Alice");
+ 	assertEquals("Hello, Alice", helloWorld.sayHello("Alice"));        
+    }
+}
+
+*******************************************************************************************************************
+// HelloService.java
+public class HelloService {
+    public String getGreeting(String name) {
+        return "Hello, " + name;
+    }
+}
+
+=========================================
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class HelloServiceTest {
+
+    @Test
+    void testGetGreeting() {
+        HelloService helloService = new HelloService();
+        String result = helloService.getGreeting("Alice");
+
+        assertEquals("Hello, Alice", result);
+    }
+}
+
+*******************************************************************************************************************
+
+public class NameRepository {
+    public String findNameById(String userId) {
+        // Imagine this talks to a DB
+        return "Default Name";
+    }
+}
+
+
+public class HelloService {
+
+    private NameRepository nameRepository;
+
+    public HelloService(NameRepository nameRepository) {
+        this.nameRepository = nameRepository;
+    }
+
+    public String getGreeting(String userId) {
+        String name = nameRepository.findNameById(userId);
+        return "Hello, " + name;
+    }
+}
+
+=========================================
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class HelloServiceTest {
+
+    @Mock
+    private NameRepository nameRepository;
+
+    @InjectMocks
+    private HelloService helloService;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+    }
+
+    @Test
+    void testGetGreeting() {
+        // Arrange
+        when(nameRepository.findNameById("123")).thenReturn("Alice");
+
+        // Act
+        String result = helloService.getGreeting("123");
+
+        // Assert
+        assertEquals("Hello, Alice", result);
+    }
+}
+

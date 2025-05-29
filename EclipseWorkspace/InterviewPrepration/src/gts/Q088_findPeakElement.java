@@ -24,21 +24,21 @@ public class Q088_findPeakElement {
 		findPeakElement(nums);
 
 	}
-	
+
 	private static void findPeakElement(int[] nums) {
-	    for (int i = 0; i <= nums.length - 3; i++) {
-	        int first = nums[i];
-	        int second = nums[i + 1];
-	        int third = nums[i + 2];
+		for (int i = 0; i <= nums.length - 3; i++) {
+			int first = nums[i];
+			int second = nums[i + 1];
+			int third = nums[i + 2];
 
-	        int maxVal = Math.max(first, Math.max(second, third));
+			int maxVal = Math.max(first, Math.max(second, third));
 
-	        System.out.println("(" + first + ", " + second + ", " + third + ") -> Peak value: " + maxVal);
-	    }
+			System.out.println("(" + first + ", " + second + ", " + third + ") -> Peak value: " + maxVal);
+		}
 	}
 
-	private static void findPeakElementWithIndex(int[] nums) { 
-		
+	private static void findPeakElementWithIndex(int[] nums) {
+
 		for (int i = 0; i <= nums.length - 3; i++) {
 
 			int maxVal = nums[i];
@@ -54,12 +54,9 @@ public class Q088_findPeakElement {
 				maxIndex = i + 2;
 			}
 
-        System.out.println("(" + nums[i] + ", " + nums[i+1] + ", " + nums[i+2] + ") -> Peak at index: " + maxIndex + ", value: " + maxVal);
+			System.out.println("(" + nums[i] + ", " + nums[i + 1] + ", " + nums[i + 2] + ") -> Peak at index: "
+					+ maxIndex + ", value: " + maxVal);
 		}
 	}
-	
-	
-	
-	
 
 }
